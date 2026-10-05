@@ -1,0 +1,484 @@
+{
+  "schema": 3,
+  "catalog_version": 1,
+  "updated": "2026-10-05",
+  "profiles": [
+    {
+      "id": "telegram-desktop-voice-message",
+      "type": "desktop",
+      "title": "Telegram Desktop",
+      "processes": [
+        "Telegram.exe"
+      ],
+      "domains": [],
+      "enabled": true,
+      "status": "verified",
+      "source": "https://github.com/telegramdesktop/tdesktop/blob/dev/Telegram/SourceFiles/core/shortcuts.cpp",
+      "voice_down": [
+        {
+          "kind": "shortcut",
+          "value": "CTRL+R"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "shortcut",
+          "value": "ENTER"
+        }
+      ],
+      "cancel": [
+        {
+          "kind": "shortcut",
+          "value": "ESC"
+        }
+      ],
+      "route_version": 1
+    },
+    {
+      "id": "teams-ptt",
+      "type": "desktop",
+      "title": "Microsoft Teams",
+      "processes": [
+        "ms-teams.exe",
+        "Teams.exe"
+      ],
+      "domains": [],
+      "enabled": true,
+      "status": "verified",
+      "source": "https://support.microsoft.com/en-us/teams/meetings/mute-and-unmute-your-mic-in-microsoft-teams",
+      "voice_down": [
+        {
+          "kind": "keydown",
+          "value": "CTRL"
+        },
+        {
+          "kind": "keydown",
+          "value": "SPACE"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "keyup",
+          "value": "SPACE"
+        },
+        {
+          "kind": "keyup",
+          "value": "CTRL"
+        }
+      ],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "zoom-ptt",
+      "type": "desktop",
+      "title": "Zoom",
+      "processes": [
+        "Zoom.exe"
+      ],
+      "domains": [],
+      "enabled": true,
+      "status": "verified",
+      "source": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063245",
+      "voice_down": [
+        {
+          "kind": "keydown",
+          "value": "SPACE"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "keyup",
+          "value": "SPACE"
+        }
+      ],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "google-meet-ptt",
+      "type": "web",
+      "title": "Google Meet",
+      "processes": [
+        "chrome.exe",
+        "msedge.exe",
+        "opera.exe"
+      ],
+      "domains": [
+        "meet.google.com"
+      ],
+      "enabled": false,
+      "status": "browser-bridge-required",
+      "source": "https://support.google.com/a/users/answer/9896256",
+      "voice_down": [
+        {
+          "kind": "keydown",
+          "value": "SPACE"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "keyup",
+          "value": "SPACE"
+        }
+      ],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "viber-desktop-voice-message",
+      "type": "desktop",
+      "title": "Rakuten Viber",
+      "processes": [
+        "Viber.exe"
+      ],
+      "window_title_contains": [],
+      "domains": [],
+      "enabled": true,
+      "status": "verified-runtime",
+      "source": "VoiceKey Button Route Probe V14.2",
+      "verified_version": "user-captured 2026-10-04",
+      "voice_down": [
+        {
+          "kind": "uia",
+          "value": "{\"automation_id\":\"\",\"name\":\"\",\"class_name\":\"SendToolbarButton\",\"control_type\":\"button\",\"pattern\":\"invoke\",\"window_point\":{\"x\":0.8208,\"y\":0.9609}}"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "uia",
+          "value": "{\"automation_id\":\"\",\"name\":\"\",\"class_name\":\"\",\"control_type\":\"button\",\"pattern\":\"invoke\",\"window_point\":{\"x\":0.8202,\"y\":0.9609}}"
+        }
+      ],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "whatsapp-windows-ptt",
+      "type": "desktop",
+      "title": "WhatsApp for Windows",
+      "processes": [
+        "WhatsApp.exe",
+        "WhatsApp.Root.exe"
+      ],
+      "domains": [],
+      "enabled": true,
+      "status": "verified-runtime",
+      "source": "VoiceKey Button Route Probe V14.2",
+      "voice_down": [
+        {
+          "kind": "uia",
+          "value": "{\"automation_id\":\"\",\"name\":\"\",\"class_name\":\"\",\"control_type\":\"button\",\"pattern\":\"invoke\",\"window_point\":{\"x\":0.9757,\"y\":0.9552}}"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "uia",
+          "value": "{\"automation_id\":\"\",\"name\":\"\",\"class_name\":\"\",\"control_type\":\"button\",\"pattern\":\"invoke\",\"window_point\":{\"x\":0.9757,\"y\":0.9552}}"
+        }
+      ],
+      "cancel": [],
+      "window_title_contains": [],
+      "verified_version": "user-confirmed 2026-10-05 V14.2",
+      "route_version": 2
+    },
+    {
+      "id": "whatsapp-web-voice-message",
+      "type": "web",
+      "title": "WhatsApp Web",
+      "processes": [
+        "chrome.exe",
+        "msedge.exe",
+        "opera.exe"
+      ],
+      "window_title_contains": [],
+      "domains": [
+        "web.whatsapp.com"
+      ],
+      "enabled": true,
+      "status": "verified-runtime",
+      "source": "VoiceKey Button Route Probe V11",
+      "verified_version": "Chrome + Opera user-captured 2026-10-04",
+      "voice_down": [
+        {
+          "kind": "browser",
+          "value": "whatsapp.voice_message"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "browser",
+          "value": "whatsapp.recording_release"
+        }
+      ],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "signal-desktop-voice-message",
+      "type": "desktop",
+      "title": "Signal Desktop",
+      "processes": [
+        "Signal.exe"
+      ],
+      "domains": [],
+      "enabled": false,
+      "status": "experimental",
+      "source": "https://support.signal.org/hc/en-us/articles/360036517511-Signal-Desktop-Keyboard-Shortcuts",
+      "voice_down": [
+        {
+          "kind": "shortcut",
+          "value": "CTRL+SHIFT+Y"
+        }
+      ],
+      "voice_up": [],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "slack-huddle-mute-toggle",
+      "type": "desktop",
+      "title": "Slack Huddle",
+      "processes": [
+        "slack.exe"
+      ],
+      "domains": [],
+      "enabled": false,
+      "status": "experimental",
+      "source": "https://slack.com/intl/en-gb/help/articles/201374536-Slack-keyboard-shortcuts",
+      "voice_down": [
+        {
+          "kind": "shortcut",
+          "value": "CTRL+SHIFT+SPACE"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "shortcut",
+          "value": "CTRL+SHIFT+SPACE"
+        }
+      ],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "discord-ptt-custom",
+      "type": "desktop",
+      "title": "Discord",
+      "processes": [
+        "Discord.exe"
+      ],
+      "domains": [],
+      "enabled": false,
+      "status": "no-action-configured",
+      "source": "https://support.discord.com/hc/en-us/articles/211376518-Voice-Input-Modes-101-Push-to-Talk-Voice-Activated",
+      "voice_down": [],
+      "voice_up": [],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "chatgpt-desktop-learn",
+      "type": "desktop",
+      "title": "ChatGPT Desktop",
+      "processes": [
+        "ChatGPT.exe"
+      ],
+      "window_title_contains": [],
+      "domains": [],
+      "enabled": false,
+      "status": "no-action-configured",
+      "source": "",
+      "verified_version": "",
+      "voice_down": [],
+      "voice_up": [],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "chatgpt-web-native-voice",
+      "type": "web",
+      "title": "ChatGPT Web",
+      "processes": [
+        "chrome.exe",
+        "msedge.exe",
+        "opera.exe"
+      ],
+      "window_title_contains": [],
+      "domains": [
+        "chatgpt.com"
+      ],
+      "enabled": true,
+      "status": "verified",
+      "source": "",
+      "verified_version": "",
+      "voice_down": [
+        {
+          "kind": "browser",
+          "value": "chatgpt.native_voice"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "browser",
+          "value": "chatgpt.dictation_release"
+        }
+      ],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "google-search-web-voice",
+      "type": "web",
+      "title": "Google Search",
+      "processes": [
+        "chrome.exe",
+        "msedge.exe",
+        "opera.exe"
+      ],
+      "window_title_contains": [],
+      "domains": [
+        "google.com",
+        "www.google.com",
+        "google.com.ua",
+        "www.google.com.ua"
+      ],
+      "enabled": true,
+      "status": "verified",
+      "source": "",
+      "verified_version": "",
+      "voice_down": [
+        {
+          "kind": "browser",
+          "value": "google.voice_search"
+        }
+      ],
+      "voice_up": [],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "vscode-universal-dictation",
+      "type": "desktop",
+      "title": "Visual Studio Code / Codex",
+      "processes": [
+        "Code.exe"
+      ],
+      "window_title_contains": [],
+      "domains": [],
+      "enabled": true,
+      "status": "verified-official-needs-runtime",
+      "source": "https://code.visualstudio.com/docs/configure/accessibility/voice",
+      "verified_version": "VS Code voice docs 2026-09-30",
+      "voice_down": [
+        {
+          "kind": "shortcut",
+          "value": "CTRL+I"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "shortcut",
+          "value": "CTRL+I"
+        }
+      ],
+      "cancel": [
+        {
+          "kind": "shortcut",
+          "value": "ESC"
+        }
+      ],
+      "route_version": 1
+    },
+    {
+      "id": "antigravity-native-voice",
+      "type": "desktop",
+      "title": "Google Antigravity",
+      "processes": [
+        "Antigravity IDE.exe",
+        "Antigravity.exe"
+      ],
+      "window_title_contains": [],
+      "domains": [],
+      "enabled": true,
+      "status": "verified-runtime",
+      "source": "VoiceKey Button Route Probe V11",
+      "verified_version": "user-confirmed 2026-10-04",
+      "voice_down": [
+        {
+          "kind": "uia",
+          "value": "{\"automation_id\":\"\",\"name\":\"Record voice memo\",\"control_type\":\"button\",\"pattern\":\"invoke\",\"parent_path\":[]}"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "uia",
+          "value": "{\"automation_id\":\"\",\"name\":\"Stop recording\",\"control_type\":\"button\",\"pattern\":\"invoke\",\"parent_path\":[]}"
+        }
+      ],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "gemini-web-voice-input",
+      "type": "web",
+      "title": "Google Gemini",
+      "processes": [
+        "chrome.exe",
+        "msedge.exe",
+        "opera.exe"
+      ],
+      "window_title_contains": [],
+      "domains": [
+        "gemini.google.com",
+        "bard.google.com"
+      ],
+      "enabled": true,
+      "status": "experimental",
+      "source": "browser_extension/site_profiles.json",
+      "verified_version": "",
+      "voice_down": [
+        {
+          "kind": "browser",
+          "value": "gemini.voice_input"
+        }
+      ],
+      "voice_up": [
+        {
+          "kind": "browser",
+          "value": "gemini.dictation_release"
+        }
+      ],
+      "cancel": [],
+      "route_version": 1
+    },
+    {
+      "id": "youtube-web-voice-search",
+      "type": "web",
+      "title": "YouTube Voice Search",
+      "processes": [
+        "chrome.exe",
+        "msedge.exe",
+        "opera.exe"
+      ],
+      "window_title_contains": [],
+      "domains": [
+        "youtube.com",
+        "www.youtube.com"
+      ],
+      "enabled": true,
+      "status": "verified-official-needs-runtime",
+      "source": "browser_extension/site_profiles.json",
+      "verified_version": "",
+      "voice_down": [
+        {
+          "kind": "browser",
+          "value": "youtube.voice_search"
+        }
+      ],
+      "voice_up": [],
+      "cancel": [],
+      "route_version": 1
+    }
+  ]
+}
