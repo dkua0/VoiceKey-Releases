@@ -27,7 +27,7 @@
 Use the **latest VoiceKey release** from the Releases page.
 
 **Recommended:** \`VoiceKey_Setup_*.exe\`  
-Also available: portable ZIP and \`SHA256SUMS.txt\`.
+Checksum: \`SHA256SUMS.txt\`.
 
 ➡️ **[Open VoiceKey Releases](https://github.com/dkua0/VoiceKey-Releases/releases)**
 
