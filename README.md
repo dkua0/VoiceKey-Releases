@@ -56,7 +56,7 @@ The application source code is maintained separately in a private repository.
 
 ## Working Beta
 
-This is an active beta. Browser or app UI changes can require a route update. Release notes describe what was verified for each build.
+This is an active beta. Browser or app UI changes can require a VoiceKey update. Built-in routing data ships inside the application rather than as a public route catalog.
 
 ---
 
