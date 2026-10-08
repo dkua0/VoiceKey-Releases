@@ -27,7 +27,7 @@
 Завантажуйте **актуальний VoiceKey** зі сторінки Releases.
 
 **Рекомендовано:** \`VoiceKey_Setup_*.exe\`  
-Також доступні portable ZIP та \`SHA256SUMS.txt\`.
+Файл перевірки: \`SHA256SUMS.txt\`.
 
 ➡️ **[Відкрити VoiceKey Releases](https://github.com/dkua0/VoiceKey-Releases/releases)**
 
